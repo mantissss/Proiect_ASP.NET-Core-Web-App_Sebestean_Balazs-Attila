@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using Sebestean_Balazs_Attila_Lab8.Models;
+using Proiect.Models;
 
-namespace Sebestean_Balazs_Attila_Lab8.Data
+namespace Proiect.Data
 {
     public class Sebestean_Balazs_Attila_Lab8Context : DbContext
     {
@@ -14,10 +14,10 @@ namespace Sebestean_Balazs_Attila_Lab8.Data
         {
         }
 
-        public DbSet<Sebestean_Balazs_Attila_Lab8.Models.Book> Book { get; set; }
+        public DbSet<Proiect.Models.Book> Book { get; set; }
 
-        public DbSet<Sebestean_Balazs_Attila_Lab8.Models.Publisher> Publisher { get; set; }
+        public DbSet<Proiect.Models.Publisher> Publisher { get; set; }
 
-        public DbSet<Sebestean_Balazs_Attila_Lab8.Models.Category> Category { get; set; }
+        public DbSet<Proiect.Models.Category> Category { get; set; }
     }
 }

@@ -5,9 +5,9 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Sebestean_Balazs_Attila_Lab8.Data;
+using Proiect.Data;
 
-namespace Sebestean_Balazs_Attila_Lab8.Migrations
+namespace Proiect.Migrations
 {
     [DbContext(typeof(Sebestean_Balazs_Attila_Lab8Context))]
     [Migration("20220114165259_PublishingDate")]
@@ -21,7 +21,7 @@ namespace Sebestean_Balazs_Attila_Lab8.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("Sebestean_Balazs_Attila_Lab8.Models.Book", b =>
+            modelBuilder.Entity("Proiect.Models.Book", b =>
                 {
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd()

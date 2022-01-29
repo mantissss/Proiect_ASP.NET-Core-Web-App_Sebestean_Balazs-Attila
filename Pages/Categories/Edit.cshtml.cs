@@ -6,16 +6,16 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using Sebestean_Balazs_Attila_Lab8.Data;
-using Sebestean_Balazs_Attila_Lab8.Models;
+using Proiect.Data;
+using Proiect.Models;
 
-namespace Sebestean_Balazs_Attila_Lab8.Pages.Categories
+namespace Proiect.Pages.Categories
 {
     public class EditModel : PageModel
     {
-        private readonly Sebestean_Balazs_Attila_Lab8.Data.Sebestean_Balazs_Attila_Lab8Context _context;
+        private readonly Proiect.Data.Sebestean_Balazs_Attila_Lab8Context _context;
 
-        public EditModel(Sebestean_Balazs_Attila_Lab8.Data.Sebestean_Balazs_Attila_Lab8Context context)
+        public EditModel(Proiect.Data.Sebestean_Balazs_Attila_Lab8Context context)
         {
             _context = context;
         }

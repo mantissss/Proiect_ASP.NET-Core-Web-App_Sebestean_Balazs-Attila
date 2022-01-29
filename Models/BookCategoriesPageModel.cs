@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Sebestean_Balazs_Attila_Lab8.Data;
+using Proiect.Data;
 
-namespace Sebestean_Balazs_Attila_Lab8.Models
+namespace Proiect.Models
 {
     public class BookCategoriesPageModel : PageModel
     {

@@ -9,9 +9,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
-using Sebestean_Balazs_Attila_Lab8.Data;
+using Proiect.Data;
 
-namespace Sebestean_Balazs_Attila_Lab8
+namespace Proiect
 {
     public class Startup
     {

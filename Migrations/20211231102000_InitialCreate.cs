@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace Sebestean_Balazs_Attila_Lab8.Migrations
+namespace Proiect.Migrations
 {
     public partial class InitialCreate : Migration
     {

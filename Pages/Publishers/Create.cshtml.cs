@@ -5,16 +5,16 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using Sebestean_Balazs_Attila_Lab8.Data;
-using Sebestean_Balazs_Attila_Lab8.Models;
+using Proiect.Data;
+using Proiect.Models;
 
-namespace Sebestean_Balazs_Attila_Lab8.Pages.Publishers
+namespace Proiect.Pages.Publishers
 {
     public class CreateModel : PageModel
     {
-        private readonly Sebestean_Balazs_Attila_Lab8.Data.Sebestean_Balazs_Attila_Lab8Context _context;
+        private readonly Proiect.Data.Sebestean_Balazs_Attila_Lab8Context _context;
 
-        public CreateModel(Sebestean_Balazs_Attila_Lab8.Data.Sebestean_Balazs_Attila_Lab8Context context)
+        public CreateModel(Proiect.Data.Sebestean_Balazs_Attila_Lab8Context context)
         {
             _context = context;
         }

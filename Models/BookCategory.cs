@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Sebestean_Balazs_Attila_Lab8.Models
+namespace Proiect.Models
 {
     public class BookCategory
     {

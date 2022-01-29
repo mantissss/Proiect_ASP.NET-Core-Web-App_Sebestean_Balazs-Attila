@@ -5,9 +5,9 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Sebestean_Balazs_Attila_Lab8.Data;
+using Proiect.Data;
 
-namespace Sebestean_Balazs_Attila_Lab8.Migrations
+namespace Proiect.Migrations
 {
     [DbContext(typeof(Sebestean_Balazs_Attila_Lab8Context))]
     [Migration("20220114172955_BookCategory")]
@@ -21,7 +21,7 @@ namespace Sebestean_Balazs_Attila_Lab8.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("Sebestean_Balazs_Attila_Lab8.Models.Book", b =>
+            modelBuilder.Entity("Proiect.Models.Book", b =>
                 {
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd()
@@ -50,7 +50,7 @@ namespace Sebestean_Balazs_Attila_Lab8.Migrations
                     b.ToTable("Book");
                 });
 
-            modelBuilder.Entity("Sebestean_Balazs_Attila_Lab8.Models.BookCategory", b =>
+            modelBuilder.Entity("Proiect.Models.BookCategory", b =>
                 {
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd()
@@ -72,7 +72,7 @@ namespace Sebestean_Balazs_Attila_Lab8.Migrations
                     b.ToTable("BookCategory");
                 });
 
-            modelBuilder.Entity("Sebestean_Balazs_Attila_Lab8.Models.Category", b =>
+            modelBuilder.Entity("Proiect.Models.Category", b =>
                 {
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd()
@@ -87,7 +87,7 @@ namespace Sebestean_Balazs_Attila_Lab8.Migrations
                     b.ToTable("Category");
                 });
 
-            modelBuilder.Entity("Sebestean_Balazs_Attila_Lab8.Models.Publisher", b =>
+            modelBuilder.Entity("Proiect.Models.Publisher", b =>
                 {
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd()
@@ -102,24 +102,24 @@ namespace Sebestean_Balazs_Attila_Lab8.Migrations
                     b.ToTable("Publisher");
                 });
 
-            modelBuilder.Entity("Sebestean_Balazs_Attila_Lab8.Models.Book", b =>
+            modelBuilder.Entity("Proiect.Models.Book", b =>
                 {
-                    b.HasOne("Sebestean_Balazs_Attila_Lab8.Models.Publisher", "Publisher")
+                    b.HasOne("Proiect.Models.Publisher", "Publisher")
                         .WithMany("Books")
                         .HasForeignKey("PublisherID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("Sebestean_Balazs_Attila_Lab8.Models.BookCategory", b =>
+            modelBuilder.Entity("Proiect.Models.BookCategory", b =>
                 {
-                    b.HasOne("Sebestean_Balazs_Attila_Lab8.Models.Book", "Book")
+                    b.HasOne("Proiect.Models.Book", "Book")
                         .WithMany("BookCategories")
                         .HasForeignKey("BookID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Sebestean_Balazs_Attila_Lab8.Models.Category", "Category")
+                    b.HasOne("Proiect.Models.Category", "Category")
                         .WithMany("BookCategories")
                         .HasForeignKey("CategoryID")
                         .OnDelete(DeleteBehavior.Cascade)

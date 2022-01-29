@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Sebestean_Balazs_Attila_Lab8.Models
+namespace Proiect.Models
 {
     public class Book
     {

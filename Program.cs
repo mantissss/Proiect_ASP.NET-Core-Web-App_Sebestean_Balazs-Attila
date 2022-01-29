@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace Sebestean_Balazs_Attila_Lab8
+namespace Proiect
 {
     public class Program
     {
